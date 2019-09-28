@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/scrollbars.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/wow.min.js"></script>
+</head>
+<body class="style-1 scrolling">
+	<div class="container animated fadeIn">
+		<div class="container-box">
+			<div class="header">
+				<div class="header-box">
+					<div class="topnav" id="top_nav">
+						<a href="#"><img src="image/logo_1.png" class="logopic" width="50px" height="50px" alt="logo"><span class="logoFont">unEClub</span></a>
+						<a href="#">HOME<div></div></a>
+						<a href="#">CHAT ROOMS<div class="active"></div></a>
+						<a href="#">REWARDS<div></div></a>
+						<a href="#">FIND PEOPLE<div></div></a>
+						<a href="#">EXCHANGE<div></div></a>
+						<a href="#">PRODUCTS<div></div></a>
+						<a href="javascript:void(0);" class="menu-icon" onclick="menufunction()" style="color: #fff;">&#9776;
+						</a>
+					</div>
+					<div class="rightnav">
+						<div class="searchbar">
+							<button class="search-1" ><span class="icon-search fa fa-search">	
+							</span></button>
+							<input type="text" name="search" class="searchbox" placeholder="Search...">
+						</div>
+						<div class="register" >
+							<a href="#">Login<div></div></a>
+							<span> &#47;</span>
+							<a href="#">Sign Up<div></div></a>
+						</div>
+					</div>
+					<div class="share-img">
+						<div class="chat1"><div><img src="image/slide/chat.png" width="40px"></div></div>
+						<div class="store1"><div><img src="image/slide/store.png" width="40px"></div></div>
+						<div class="coin123"><div><img  src="image/slide/coin1.png" width="40px"></div></div>
+						<div class="cart1"><div><img  src="image/slide/cart.png" width="40px"></div></div>
+						<div class="gift1"><div><img src="image/slide/gift.png" width="40px"></div></div>
+						<div class="gamepad1"><div><img src="image/slide/gamepad.png" width="40px"></div></div>
+					</div>
+					<div class="dir1"><img src="image/slide/dir.png" width="140px"></div>
+					<div class="woman"><div><img src="image/slide/man.png" width="50px"></div></div>
+
+					<script type="text/javascript">
+						var a=0;
+						shareimgfunc();
+						function shareimgfunc(){
+							var shareimg= document.getElementsByClassName("share-img");
+							var dir= document.getElementsByClassName("dir1");
+							var woman= document.getElementsByClassName("woman");
+							$(shareimg).toggleClass(" rotate1");
+							$(dir).toggleClass(" rotate2");
+							$(woman).toggleClass(" rotate3");
+							
+						setTimeout(shareimgfunc, 5000);
+						}
+
+
+					</script>
+
+					<div class="rightform">
+						<div class="signup-name">
+							Sign Up
+						</div>
+						<div class="username">
+							<span class="fa fa-user"></span>
+							<input type="text" name="username" placeholder="Username">
+						</div>
+						<div class="choose-password">
+							<span class="fa fa-lock"></span>
+							<input type="text" name="choose-password"  placeholder="Choose Password">
+						</div>
+						<div class="fullname">
+							<span class="fa fa-user"></span>
+							<input type="text" name="fullname" placeholder="Full Name">
+						</div>
+						<div class="email">
+							<span class="fa fa-envelope"></span>
+							<input type="text" name="email"  placeholder="Email">
+						</div>
+						<div class="submit">
+							<button>Create FuneClub Account</button>
+							<span>By continuing, you agree to the <a href="#">Term Of Services</a></span>
+							<div>Already have an account? <a href="#">Log in</a></div>
+						</div>
+					</div>
+					<div class="user-icon">
+						<img src="image/user.png" width="80%">
+					</div>
+				</div>
+			</div>
+		</div>         
+	</div>
+	</script>
+	<div class="section">
+		<div class="section-box">
+			<div class="featured-room">
+				<div class="featured-title">
+					<h1 class="wow fadeInUp">Our Featured Room</h1>
+				</div>
+				<div class="featured-listbox">
+					<div class="listbox lb1 wow zoomInLeft">
+						<div class="useronline uobg1">
+							<p>Dating Room</p>
+							<p>106 Online</p>
+						</div>
+					</div>
+					<div class="listbox lb2 wow slideInLeft">
+						<div class="useronline uobg2">
+							<p>Chatting Room</p>
+							<p>6 Online</p>
+						</div>
+					</div>
+					<div class="listbox lb3 wow slideInRight">
+						<div class="useronline uobg3">
+							<p>Psychology Room</p>
+							<p>55 Online</p>
+						</div>
+					</div>
+					<div class="listbox lb4 wow zoomInRight">
+						<div class="useronline uobg4">
+							<p>Game Room</p>
+							<p>200 Online</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section2">
+		<div class="section-box2">
+			<div class="some-room">
+				<div class="popular-rooms">
+					<div class="some-title wow fadeInUp">
+						<p>Our Popular Rooms</p>
+					</div>
+					<div class="some-pic wow slideInLeft">
+						<div class="devide-box1">
+							<div class="show-box wow zoomInUp"><div class="bg-img1"></div>
+							<div class="box-info"><p class="left-bi">LIFE</p><p class="right-bi">5 Online</p></div></div>
+							<div class="show-box wow zoomInRight"><div class="bg-img2"></div>
+							<div class="box-info"><p class="left-bi">FOOD</p><p class="right-bi">17 Online</p></div></div>
+							<div class="show-box wow fadeInUp"><div class="bg-img3"></div>
+							<div class="box-info"><p class="left-bi">RECIPE</p><p class="right-bi">11 Online</p></div></div>
+						</div>
+						<div class="devide-box2">
+							<div class="show-box wow zoomInUp"><div class="bg-img4"></div>
+							<div class="box-info"><p class="left-bi">YOGA</p><p class="right-bi">22 Online</p></div></div>
+							<div class="show-box wow zoomInLeft"><div class="bg-img5"></div>
+							<div class="box-info"><p class="left-bi">PLANTS AND MEDICINES</p><p class="right-bi">6 Online</p></div></div>
+							<div class="show-box wow fadeInUp"><div class="bg-img6"></div>
+							<div class="box-info"><p class="left-bi">FUN AND SPORTS</p><p class="right-bi">35 Online</p></div></div>
+						</div>
+					</div>
+				</div>
+				<div class="other-rooms wow slideInRight">
+					<div class="other-chat">
+						<div class="chat-left wow slideInUp">
+							<div class="pro-speak"><p>Marina Says:</p><p>2 Days ago</p></div>
+							<div class="pro-icon"><img src="image/woman-2.png"></div>
+							<div class="chat-message">
+								Hi! You are most welcome to Funeclub. Here you can join room to meet and chat with new
+								people.
+							</div>
+						</div>
+						<div class="chat-left wow slideInUp">
+							<div class="pro-speak1"><p>Amir Reply:</p><p>8 Days ago</p></div>
+							<div class="pro-icon1"><img src="image/man-2.png"></div>
+							<div class="chat-message1">
+								Hi! It's amazing. 
+								Today i won thousand of coins and 5 tickets. Hey mica i would like to gift
+								you some thing. 
+							</div>
+						</div>
+						<div class="chat-left wow slideInUp">
+							<div class="pro-speak"><p>Hina Won Prizes:</p><p>20 Days ago</p></div>
+							<div class="pro-icon"><img src="image/woman-3.png"></div>
+							<div class="chat-message">
+								Hey! Congratulation you won:<br/>
+								<div class="coin"><img src="image/coin2.png" width="15px"> <p>500</p> </div>
+								<div class="note"><img src="image/notes.png" width="15px"> <p>12</p> </div>
+							</div>
+							<div class="prize-cup"><img src="image/cup1.png" width="80px"></div>
+						</div>
+						<div class="chat-left wow slideInUp">
+							<div class="pro-speak1"><p>Merek Gifted To Hina:</p><p>32 Days ago</p></div>
+							<div class="pro-icon1"><img src="image/man-3.png"></div>
+							<div class="chat-message1 chat-message2">
+								<p><span>Hello Hina! Merek send you</span> <img class="animg" src="image/gift.png" width="15px"> </p>
+								<br/>
+								<br/>
+								<div class="coin coin1"><img src="image/headset.png" width="15px"> <p>1 Drinks</p> </div>
+								<div class="note note1"><img src="image/clothes.png" width="15px"> <p>2 Clothes</p> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section3">
+		<div class="section-box3">
+			<div class="card-room">
+				<div class="buy-card">
+					<div class="featured-title wow fadeInUp">
+						<h1>Our Featured Products</h1>
+					</div>
+					<div class="card-listing wow zoomInLeft">
+						<div class="card-img cardimg1"><img src="image/funcard1.png" width="50%" height="90%"></div>
+						<div class="cardname">Membership Card</div>
+						<div class="cardname cardname1"><span class="fa fa-inr"></span> 200</div>
+						<div class="cardinfo">Funeclub Products</div>
+					</div>
+					<div class="card-listing wow slideInLeft">
+						<div class="card-img cardimg2"><img src="image/card2.png" width="90%" height="100%"></div>
+						<div class="cardname">Gift Card</div>
+						<div class="cardname cardname1"><span class="fa fa-inr"></span> 350</div>
+						<div class="cardinfo">Funeclub Products</div>
+					</div>
+					<div class="card-listing wow slideInRight">
+						<div class="card-img cardimg2"><img src="image/amazoncard.png" width="100%" height="100%"></div>
+						<div class="cardname">Gift Card</div>
+						<div class="cardname cardname1"><span class="fa fa-inr"></span> 100 - <span class="fa fa-inr"></span> 1000</div>
+						<div class="cardinfo">Amazon Products</div>
+					</div>
+					<div class="card-listing wow zoomInRight">
+						<div class="card-img"><img src="image/gamecard1.png" width="100%" height="100%"></div>
+						<div class="cardname">Game Card</div>
+						<div class="cardname cardname1"><span class="fa fa-inr"></span> 300</div>
+						<div class="cardinfo">Funeclub Products</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section5">
+		<div class="section-box5">
+			<div class="full-length"></div>
+			<div class="footer">
+				<div class="footer-mess">
+					<div class="card-listing12">
+						<h2>Resources</h2>
+						<span></span>
+						<div class="card-listing2">
+							<div><a href="#">Chat Rooms</a></div>
+							<div><a href="#">Play Games</a></div>
+							<div><a href="#">Find People</a></div>
+							<div><a href="#">FuneClub Products</a></div>
+						</div>
+						<div class="card-listing2">
+							<div><a href="#">Create a Chat Room</a></div>
+							<div><a href="#">FuneClub Blog</a></div>
+							<div><a href="#">Member Log In</a></div>
+						</div>
+						<div class="card-listing2">
+							<div><a href="#">Buy Tickets</a></div>
+							<div><a href="#">Our Supporters</a></div>
+						</div>
+					</div>
+					<div class="card-listing21">
+						<h2>Stay Connected</h2>
+						<span></span>
+						<form>
+							<input type="text" name="email" placeholder="Enter your email to get newsletter">
+							<button class="fa fa-angle-right"></button>
+						</form>
+						<div class="follow">
+							<span>Follow Us</span>
+							<button class="fa fa-facebook"></button>
+							<button class="fa fa-twitter"></button>
+							<button class="fa fa-google-plus"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section6">
+		<div class="section-box6">
+			<div class="footer2">
+				<div class="copyright">Copyright © 2017 | FuneClub.com . All Rights Reserved</div>
+				<div class="aboutus">
+					<div><a href="">About Us</a> |</div>
+					<div><a href="">&nbsp; Privacy Policy</a> |</div>
+					<div><a href="">&nbsp; Terms &amp; Conditions</a> |</div>
+					<div><a href="">&nbsp; Blog</a> |</div>
+					<div><a href="">&nbsp; Forum</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+		new WOW().init();
+		//menufunction active after minimizing the menu
+		function menufunction(){
+			var x = document.getElementById("top_nav");
+			if(x.className==="topnav"){
+				x.className += " responsive";
+			}
+			else{
+				x.className= "topnav";
+			}
+		}
+	</script>
+</body>
+</html>
